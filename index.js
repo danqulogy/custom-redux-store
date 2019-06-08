@@ -25,21 +25,25 @@ function createStore(reducer) {
 
 
 // App Code - reducer function
+const ADD_TODO = 'ADD_TODO';
+const REMOVE_TODO = 'REMOVE_TODO';
+const TOGGLE_TODO = 'TOGGLE_TODO';
+
 function todos(state = {todos: []}, action) {
 
     switch (action.type) {
-        case 'ADD_TODO':
+        case ADD_TODO:
         {
             state.todos = state.todos.concat([action.todo]);
             return state;
         }
-        case 'REMOVE_TODO':
+        case REMOVE_TODO:
         {
             state.todos = state.todos.filter((t)=> t.id !== action.id);
             return  state;
         }
 
-        case 'TOGGLE_TODO':
+        case TOGGLE_TODO:
         {
             state.todos.map((todo) => todo.id !== action.id ? todo : Object.assign({}, todo, {complete: !todo.complete}));
             return state;
@@ -56,7 +60,7 @@ store.subscribe(()=> {
 });
 
 store.dispatch({
-    type: 'ADD_TODO',
+    type: ADD_TODO,
     todo: {
         id: 0,
         name: 'Learn React',
@@ -65,7 +69,7 @@ store.dispatch({
 });
 
 store.dispatch({
-    type: 'ADD_TODO',
+    type: ADD_TODO,
     todo: {
         id: 1,
         name: 'Learn Redux',
@@ -74,11 +78,11 @@ store.dispatch({
 });
 
 store.dispatch({
-    type: 'TOGGLE_TODO',
+    type: TOGGLE_TODO,
     id: 0
 });
 
 store.dispatch({
-    type: 'REMOVE_TODO',
+    type: REMOVE_TODO,
     id: 1
 });
