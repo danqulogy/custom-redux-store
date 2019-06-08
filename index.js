@@ -38,11 +38,7 @@ function todos(state = {todos: []}, action) {
     }
 
     if (action.type === 'TOGGLE_TODO'){
-        let selectedTodo = (state.todos.filter((t)=> t.id === action.id)[0]);
-        if (selectedTodo){
-            let indexOfSelectedTodo = state.todos.indexOf(selectedTodo);
-            state.todos[indexOfSelectedTodo].complete = !state.todos[indexOfSelectedTodo].complete
-        }
+        state.todos.map((todo) => todo.id !== action.id ? todo : Object.assign({}, todo, {complete: !todo.complete}));
         return state;
     }
     return  state;
