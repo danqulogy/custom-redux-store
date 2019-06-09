@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Todos Goals</title>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"></script>-->
+
+<!--    <script src="https://unpkg.com/react@16.3.0-alpha.1/umd/react.development.js"></script>-->
+<!--    <script src="https://unpkg.com/react-dom@16.3.0-alpha.1/umd/react-dom.development.js"></script>-->
+<!--    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"></script>-->
+
+    <script src="babel.min.js"></script>
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.js"></script>
     <script src="redux.min.js"></script>
+
+
 </head>
 <body>
 
@@ -15,13 +25,16 @@
 
     <ol id="todos"></ol>
 </div>
-<hr>
 <div>
     <h1>Goals</h1>
     <input id="goal" type="text" placeholder="Add Tod">
     <button id="goalBtn">Add Todo</button>
 
     <ol id="goals"></ol>
+</div>
+<hr>
+<div id="app">
+
 </div>
 
 
@@ -216,6 +229,67 @@
         node.appendChild(removeBtn);
         document.getElementById('goals').appendChild(node);
     }
+</script>
+
+<script type="text/babel">
+    function List(props) {
+        return (
+            <ul>
+                <li>LIST</li>
+            </ul>
+        )
+    }
+
+    class Todos extends React.Component{
+
+        addItem = (e) => {
+            e.preventDefault();
+            const name = this.input.value;
+            this.input.value = '';
+            this.props.store.dispatch(addTodoAction({
+                name,
+                complete: false,
+                id: generateId()
+            }));
+        }
+        render(){
+            return (
+                <div>
+                    <h1>Todo List</h1>
+                    <label>
+                        <input type="text" ref={(input)=> this.input = input } placeholder="Add Todo"/>
+                    </label>
+                    <button onClick={this.addItem}>Add Todo</button>
+                    <List/>
+                </div>
+            )
+        }
+    }
+
+    class Goals extends React.Component{
+        render(){
+            return (
+                <div>
+                    GOALS
+                    <List/>
+                </div>
+            )
+        }
+    }
+
+    class App extends React.Component{
+
+        render() {
+            return (
+                <div>
+                    <Todos store={this.props.store}/>
+                    <Goals/>
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(<App store={store}/>, document.getElementById('app'));
 </script>
 </body>
 </html>

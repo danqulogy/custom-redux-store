@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e12373-073b-4811-b9e3-f3e3d43a0d96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/babel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-dom.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux-with-react-ui.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-with-redux.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-with-redux.html" afterDir="false" />
     </list>
@@ -22,19 +26,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index-with-redux.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="126" column="9" lean-forward="true" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+            <state relative-caret-position="3354">
+              <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redux-with-react-ui.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="256" column="21" lean-forward="true" selection-start-line="256" selection-start-column="21" selection-end-line="256" selection-end-column="21" />
               <folding>
-                <element signature="e#1526#1605#0" />
-                <element signature="e#1641#1721#0" />
-                <element signature="e#1757#1837#0" />
-                <element signature="e#1872#1951#0" />
-                <element signature="e#1987#2067#0" />
-                <element signature="e#2138#2625#0" />
-                <element signature="e#2696#3009#0" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -93,6 +100,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/redux.min.js" />
         <option value="$PROJECT_DIR$/index-with-redux.html" />
+        <option value="$PROJECT_DIR$/react.development.js" />
+        <option value="$PROJECT_DIR$/react-dom.development.js" />
+        <option value="$PROJECT_DIR$/babel.min.js" />
+        <option value="$PROJECT_DIR$/redux-with-react-ui.html" />
       </list>
     </option>
   </component>
@@ -108,6 +119,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,7 +131,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,6 +186,7 @@
       <option name="presentableId" value="Default" />
       <updated>1560026809127</updated>
       <workItem from="1560026812029" duration="21953000" />
+      <workItem from="1560089487918" duration="4274000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -187,7 +199,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27818000" />
+    <option name="totallyTimeSpent" value="33760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -196,7 +208,7 @@
       <window_info id="Storybook" order="0" side_tool="true" weight="0.32980332" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -210,7 +222,7 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.39900663" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.30463576" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.30463576" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -276,16 +288,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/redux.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -293,18 +295,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/react.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="1708" lean-forward="true" selection-start-line="1708" selection-end-line="1708" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-dom.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="16623" lean-forward="true" selection-start-line="16623" selection-end-line="16623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index-with-redux.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="126" column="9" lean-forward="true" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+        <state relative-caret-position="3354">
+          <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babel.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="30" column="20021" selection-start-line="30" selection-start-column="20021" selection-end-line="30" selection-end-column="20021" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redux-with-react-ui.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="256" column="21" lean-forward="true" selection-start-line="256" selection-start-column="21" selection-end-line="256" selection-end-column="21" />
           <folding>
-            <element signature="e#1526#1605#0" />
-            <element signature="e#1641#1721#0" />
-            <element signature="e#1757#1837#0" />
-            <element signature="e#1872#1951#0" />
-            <element signature="e#1987#2067#0" />
-            <element signature="e#2138#2625#0" />
-            <element signature="e#2696#3009#0" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
