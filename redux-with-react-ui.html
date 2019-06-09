@@ -245,7 +245,7 @@
         addItem = (e) => {
             e.preventDefault();
             const name = this.input.value;
-            this.input.value = '';
+            this.todoInput.value = '';
             this.props.store.dispatch(addTodoAction({
                 name,
                 complete: false,
@@ -257,7 +257,7 @@
                 <div>
                     <h1>Todo List</h1>
                     <label>
-                        <input type="text" ref={(input)=> this.input = input } placeholder="Add Todo"/>
+                        <input type="text" ref={(input)=> this.todoInput = input } placeholder="Add Todo"/>
                     </label>
                     <button onClick={this.addItem}>Add Todo</button>
                     <List/>
@@ -267,10 +267,22 @@
     }
 
     class Goals extends React.Component{
+        addGoal = (e) => {
+            e.preventDefault();
+            const name = this.goalInput.value;
+            this.props.store.dispatch(addGoalAction({
+                name,
+                id: generateId()
+            }));
+        }
         render(){
             return (
                 <div>
-                    GOALS
+                    <h1>Goals</h1>
+                    <label>
+                        <input type="text" placeholder="Add Goals" ref={(input)=> this.goalInput = input}/>
+                    </label>
+                    <button onClick={this.addGoal}>Add Goal</button>
                     <List/>
                 </div>
             )
@@ -283,7 +295,7 @@
             return (
                 <div>
                     <Todos store={this.props.store}/>
-                    <Goals/>
+                    <Goals store={this.props.store}/>
                 </div>
             );
         }
