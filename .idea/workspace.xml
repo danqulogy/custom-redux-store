@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
+            <state relative-caret-position="280">
+              <caret line="234" column="54" lean-forward="true" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
               <folding>
                 <element signature="e#1019#1079#0" />
                 <element signature="e#1104#1164#0" />
@@ -132,18 +132,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560026809127</updated>
-      <workItem from="1560026812029" duration="20893000" />
+      <workItem from="1560026812029" duration="21631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20893000" />
+    <option name="totallyTimeSpent" value="21631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Storybook" order="0" side_tool="true" />
+      <window_info id="Storybook" order="0" side_tool="true" weight="0.32980332" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="3" weight="0.24962178" />
@@ -163,7 +163,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info active="true" anchor="right" id="Terminal" order="4" visible="true" weight="0.35552195" />
+      <window_info anchor="right" id="Terminal" order="4" visible="true" weight="0.35552195" />
       <window_info anchor="right" id="Run" order="5" weight="0.4236006" />
     </layout>
   </component>
@@ -198,8 +198,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
+        <state relative-caret-position="280">
+          <caret line="234" column="54" lean-forward="true" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
           <folding>
             <element signature="e#1019#1079#0" />
             <element signature="e#1104#1164#0" />
