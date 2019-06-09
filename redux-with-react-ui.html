@@ -233,9 +233,16 @@
 
 <script type="text/babel">
     function List(props) {
+        const {items} = props;
         return (
             <ul>
-                <li>LIST</li>
+                {items.map((item)=> (
+                    <li key={item.id}>
+                        <span>{item.name}</span>
+                        <button onClick={()=>props.remove(item)}>X</button>
+                    </li>
+                ))}
+
             </ul>
         )
     }
@@ -244,13 +251,17 @@
 
         addItem = (e) => {
             e.preventDefault();
-            const name = this.input.value;
+            const name = this.todoInput.value;
             this.todoInput.value = '';
             this.props.store.dispatch(addTodoAction({
                 name,
                 complete: false,
                 id: generateId()
             }));
+        }
+
+        removeItem = (todo)=> {
+            this.props.store.dispatch(removeTodoAction(todo.id));
         }
         render(){
             return (
@@ -260,7 +271,7 @@
                         <input type="text" ref={(input)=> this.todoInput = input } placeholder="Add Todo"/>
                     </label>
                     <button onClick={this.addItem}>Add Todo</button>
-                    <List/>
+                    <List items={this.props.todos} remove={this.removeItem}/>
                 </div>
             )
         }
@@ -275,6 +286,9 @@
                 id: generateId()
             }));
         }
+        removeItem = (goal) => {
+            this.props.store.dispatch(removeGoalAction(goal.id))
+        }
         render(){
             return (
                 <div>
@@ -283,7 +297,7 @@
                         <input type="text" placeholder="Add Goals" ref={(input)=> this.goalInput = input}/>
                     </label>
                     <button onClick={this.addGoal}>Add Goal</button>
-                    <List/>
+                    <List items={this.props.goals} remove={this.removeItem}/>
                 </div>
             )
         }
@@ -291,11 +305,20 @@
 
     class App extends React.Component{
 
+        componentDidMount(){
+            const {store} = this.props;
+            store.subscribe(()=> this.forceUpdate());
+            // this.forceUpdate() is an anti-pattern but that is exactly what we need here
+        }
+
         render() {
+            const {store} = this.props;
+            const {todos, goals} = store.getState();
+
             return (
                 <div>
-                    <Todos store={this.props.store}/>
-                    <Goals store={this.props.store}/>
+                    <Todos todos={todos} store={this.props.store}/>
+                    <Goals goals={goals} store={this.props.store}/>
                 </div>
             );
         }
