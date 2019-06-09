@@ -14,7 +14,7 @@ function createStore(reducer) {
     const dispatch = (action) => {
         state = reducer(state, action);
         listeners.forEach((listener) => listener());
-    }
+    };
 
     return {
         getState,
@@ -24,29 +24,29 @@ function createStore(reducer) {
 }
 
 
-// App Code - reducer function
+// App Code -
 const ADD_TODO = 'ADD_TODO';
 const REMOVE_TODO = 'REMOVE_TODO';
 const TOGGLE_TODO = 'TOGGLE_TODO';
+const ADD_GOAL = 'ADD_GOAL';
+const REMOVE_GOAL = 'REMOVE_GOAL';
 
-function todos(state = {todos: []}, action) {
+// todos reducer function
+function todos(state = [], action) {
 
     switch (action.type) {
         case ADD_TODO:
         {
-            state.todos = state.todos.concat([action.todo]);
-            return state;
+            return state.concat([action.todo]);
         }
         case REMOVE_TODO:
         {
-            state.todos = state.todos.filter((t)=> t.id !== action.id);
-            return  state;
+            return state.filter((todo)=> todo.id !== action.id);
         }
 
         case TOGGLE_TODO:
         {
-            state.todos.map((todo) => todo.id !== action.id ? todo : Object.assign({}, todo, {complete: !todo.complete}));
-            return state;
+            return state.map((todo) => todo.id !== action.id ? todo : Object.assign({}, todo, {complete: !todo.complete}));
         }
         default:
             return  state;
@@ -54,7 +54,34 @@ function todos(state = {todos: []}, action) {
 
 }
 
-const store = createStore(todos);
+// goals reducer function
+function goals(state = [], action) {
+
+    switch (action.type) {
+        case ADD_GOAL:
+        {
+            return state.concat([action.goal]);
+        }
+        case REMOVE_GOAL:
+        {
+            return state.filter((goal)=> goal.id !== action.id);
+        }
+
+        default:
+            return  state;
+    }
+
+}
+
+// root reducer
+function app(state ={},action){
+    return {
+        todos: todos(state.todos, action),
+        goals: goals(state.goals, action)
+    }
+}
+
+const store = createStore(app);
 store.subscribe(()=> {
     console.log('The new state is: ', store.getState());
 });
@@ -84,5 +111,25 @@ store.dispatch({
 
 store.dispatch({
     type: REMOVE_TODO,
+    id: 1
+});
+store.dispatch({
+    type: ADD_GOAL,
+    goal: {
+        id: 0,
+        name: 'Become an expert in react/react native development'
+    }
+});
+
+store.dispatch({
+    type: ADD_GOAL,
+    goal: {
+        id: 1,
+        name: 'Become an expert in PHP'
+    }
+});
+
+store.dispatch({
+    type: REMOVE_GOAL,
     id: 1
 });
