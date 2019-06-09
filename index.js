@@ -31,6 +31,42 @@ const TOGGLE_TODO = 'TOGGLE_TODO';
 const ADD_GOAL = 'ADD_GOAL';
 const REMOVE_GOAL = 'REMOVE_GOAL';
 
+// Action creators
+function addTodo(todo) {
+    return {
+        type: ADD_TODO,
+        todo
+    }
+}
+
+function removeTodo(id) {
+    return {
+        type: REMOVE_TODO,
+        id
+    }
+}
+
+function toggleTodo(id){
+    return {
+        type: TOGGLE_TODO,
+        id
+    }
+}
+
+function addGoal(goal) {
+    return {
+        type: TOGGLE_TODO,
+        goal
+    }
+}
+
+function removeGoal(id) {
+    return {
+        type: REMOVE_GOAL,
+        id
+    }
+}
+
 // todos reducer function
 function todos(state = [], action) {
 
@@ -86,50 +122,32 @@ store.subscribe(()=> {
     console.log('The new state is: ', store.getState());
 });
 
-store.dispatch({
-    type: ADD_TODO,
-    todo: {
-        id: 0,
-        name: 'Learn React',
-        complete: false
-    }
-});
+store.dispatch(addTodo({
+    id: 0,
+    name: 'Learn React',
+    complete: false
+}));
 
-store.dispatch({
-    type: ADD_TODO,
-    todo: {
-        id: 1,
-        name: 'Learn Redux',
-        complete: false
-    }
-});
+store.dispatch(addTodo({
+    id: 1,
+    name: 'Learn Redux',
+    complete: false
+}));
 
-store.dispatch({
-    type: TOGGLE_TODO,
-    id: 0
-});
+store.dispatch(toggleTodo(0));
 
-store.dispatch({
-    type: REMOVE_TODO,
-    id: 1
-});
-store.dispatch({
-    type: ADD_GOAL,
-    goal: {
-        id: 0,
-        name: 'Become an expert in react/react native development'
-    }
-});
+store.dispatch(removeTodo(1));
 
-store.dispatch({
-    type: ADD_GOAL,
-    goal: {
-        id: 1,
-        name: 'Become an expert in PHP'
-    }
-});
+store.dispatch(addGoal({
+    id: 0,
+    name: 'Become an expert in react/react native development'
+}));
 
-store.dispatch({
-    type: REMOVE_GOAL,
-    id: 1
-});
+store.dispatch(addGoal({
+    id: 1,
+    name: 'Become an expert in PHP'
+}));
+
+store.dispatch(removeGoal(1));
+
+
