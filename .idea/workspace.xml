@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e12373-073b-4811-b9e3-f3e3d43a0d96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,14 +15,14 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.js">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
-                <element signature="n#!!block;n#todos#0" />
-                <element signature="n#!!block;n#goals#0" />
-                <element signature="n#!!block;n#app#0" />
+                <element signature="e#1400#1855#0" />
+                <element signature="e#1918#2203#0" />
+                <element signature="e#2251#2358#0" />
               </folding>
             </state>
           </provider>
@@ -39,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,6 +51,7 @@
       <list>
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -80,6 +82,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -122,12 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560026809127</updated>
-      <workItem from="1560026812029" duration="16139000" />
+      <workItem from="1560026812029" duration="17563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16139000" />
+    <option name="totallyTimeSpent" value="17563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -136,7 +139,7 @@
       <window_info id="Storybook" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -153,7 +156,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info active="true" anchor="right" id="Terminal" order="4" visible="true" weight="0.44780636" />
+      <window_info anchor="right" id="Terminal" order="4" visible="true" weight="0.21558245" />
       <window_info anchor="right" id="Run" order="5" weight="0.4236006" />
     </layout>
   </component>
@@ -176,12 +179,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        <state relative-caret-position="212">
+          <caret line="143" column="4" lean-forward="true" selection-end-line="153" />
           <folding>
             <element signature="n#!!block;n#todos#0" />
             <element signature="n#!!block;n#goals#0" />
             <element signature="n#!!block;n#app#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#1400#1855#0" />
+            <element signature="e#1918#2203#0" />
+            <element signature="e#2251#2358#0" />
           </folding>
         </state>
       </provider>
