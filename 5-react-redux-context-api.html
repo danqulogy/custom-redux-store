@@ -239,20 +239,10 @@
         }
     }
 
-    class ConnectedTodos extends React.Component{
 
-        render() {
-            return (
-                <Context.Consumer>
-                    {(store) => {
-                        const {todos} = store.getState();
-                        return (<Todos todos={todos} dispatch={store.dispatch}/>)
-                    }}
-                </Context.Consumer>
-            );
-        }
-
-    }
+    const ConnectedTodos = connect((state) => ({
+        todos: state.todos
+    }))(Todos);
 
     class Goals extends React.Component {
         addGoal = (e) => {
@@ -289,41 +279,29 @@
         }
     }
 
-    class ConnectedGoals extends React.Component{
-        render(){
-            return (
-                <Context.Consumer>
-                    {(store) => {
-                        const {goals} = store.getState();
-                        return (<Goals goals={goals} dispatch={store.dispatch}/>)
-                    }}
-                </Context.Consumer>
-            )
-        }
-    }
+
+    const ConnectedGoals = connect((state)=> ({
+        goals: state.goals
+    }))(Goals);
 
     class App extends React.Component {
 
         componentDidMount() {
-            const {store} = this.props;
+            const {dispatch} = this.props;
 
             Promise.all([
                 API.fetchTodos(),
                 API.fetchGoals()
             ]).then(([todos, goals]) => {
-                store.dispatch(receiveDataAction(todos, goals));
+                dispatch(receiveDataAction(todos, goals));
             });
 
+            //TODO: dispatch(handleInitialData())
 
-            store.subscribe(() => this.forceUpdate());
-            // this.forceUpdate() is an anti-pattern but that is exactly what we need here
         }
 
         render() {
-            const {store} = this.props;
-            const {loading} = store.getState();
-
-            if (loading === true) {
+            if (this.props.loading === true) {
                 return <h3>Loading...</h3>
             }
 
@@ -337,18 +315,9 @@
     }
 
 
-
-    class ConnectedApp extends React.Component{
-        render(){
-            return (
-                <Context.Consumer>
-                    {(store) => (
-                        <App store={store}/>
-                    )}
-                </Context.Consumer>
-            )
-        }
-    }
+    const ConnectedApp = connect((state => ({
+        loading: state.loading
+    })))(App);
 
     const Context = React.createContext();
 
