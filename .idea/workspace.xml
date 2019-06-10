@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5-react-redux-context-api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="360" column="35" lean-forward="true" selection-start-line="360" selection-start-column="35" selection-end-line="360" selection-end-column="35" />
+            <state relative-caret-position="242">
+              <caret line="323" column="47" lean-forward="true" selection-start-line="323" selection-start-column="47" selection-end-line="323" selection-end-column="47" />
               <folding>
                 <element signature="e#1473#1552#0" />
                 <element signature="e#1588#1668#0" />
@@ -31,7 +31,6 @@
                 <element signature="e#3902#4282#0" />
                 <element signature="e#4361#4596#0" />
                 <element signature="e#4891#4944#0" />
-                <element signature="e#8056#9092#0" />
               </folding>
             </state>
           </provider>
@@ -178,7 +177,7 @@
       <workItem from="1560026812029" duration="21953000" />
       <workItem from="1560089487918" duration="8687000" />
       <workItem from="1560133724591" duration="10528000" />
-      <workItem from="1560170245088" duration="2785000" />
+      <workItem from="1560170245088" duration="5520000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -191,7 +190,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51486000" />
+    <option name="totallyTimeSpent" value="54221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -201,7 +200,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="3" weight="0.26096824" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info active="true" id="Structure" order="4" side_tool="true" visible="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Tail" order="2" />
@@ -365,8 +364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5-react-redux-context-api.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="360" column="35" lean-forward="true" selection-start-line="360" selection-start-column="35" selection-end-line="360" selection-end-column="35" />
+        <state relative-caret-position="242">
+          <caret line="323" column="47" lean-forward="true" selection-start-line="323" selection-start-column="47" selection-end-line="323" selection-end-column="47" />
           <folding>
             <element signature="e#1473#1552#0" />
             <element signature="e#1588#1668#0" />
@@ -381,7 +380,6 @@
             <element signature="e#3902#4282#0" />
             <element signature="e#4361#4596#0" />
             <element signature="e#4891#4944#0" />
-            <element signature="e#8056#9092#0" />
           </folding>
         </state>
       </provider>
