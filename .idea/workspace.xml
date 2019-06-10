@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/asychronous-redux.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="189" column="35" selection-start-line="189" selection-start-column="35" selection-end-line="189" selection-end-column="35" />
+            <state relative-caret-position="462">
+              <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
               <folding>
                 <element signature="e#2093#2580#0" />
                 <element signature="e#2651#2964#0" />
@@ -167,7 +167,7 @@
       <updated>1560026809127</updated>
       <workItem from="1560026812029" duration="21953000" />
       <workItem from="1560089487918" duration="8687000" />
-      <workItem from="1560133724591" duration="9431000" />
+      <workItem from="1560133724591" duration="9674000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -180,7 +180,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47604000" />
+    <option name="totallyTimeSpent" value="47847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -340,8 +340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/asychronous-redux.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="189" column="35" selection-start-line="189" selection-start-column="35" selection-end-line="189" selection-end-column="35" />
+        <state relative-caret-position="462">
+          <caret line="211" lean-forward="true" selection-start-line="211" selection-end-line="211" />
           <folding>
             <element signature="e#2093#2580#0" />
             <element signature="e#2651#2964#0" />
