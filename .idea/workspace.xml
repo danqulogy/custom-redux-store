@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e12373-073b-4811-b9e3-f3e3d43a0d96" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/6-redux-react-library-usage.html" beforeDir="false" afterPath="$PROJECT_DIR$/6-redux-react-library-usage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,9 +16,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/6-redux-react-library-usage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="318" lean-forward="true" selection-start-line="318" selection-end-line="318" />
+            <state relative-caret-position="292">
+              <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
               <folding>
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#5481#6785#0" />
                 <element signature="e#6885#8102#0" />
                 <element signature="e#8201#8881#0" />
@@ -169,7 +171,7 @@
       <workItem from="1560026812029" duration="21953000" />
       <workItem from="1560089487918" duration="8687000" />
       <workItem from="1560133724591" duration="10528000" />
-      <workItem from="1560170245088" duration="10673000" />
+      <workItem from="1560170245088" duration="10888000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -182,7 +184,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59374000" />
+    <option name="totallyTimeSpent" value="59589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -389,9 +391,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/6-redux-react-library-usage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="318" lean-forward="true" selection-start-line="318" selection-end-line="318" />
+        <state relative-caret-position="292">
+          <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
           <folding>
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
             <element signature="e#5481#6785#0" />
             <element signature="e#6885#8102#0" />
             <element signature="e#8201#8881#0" />
