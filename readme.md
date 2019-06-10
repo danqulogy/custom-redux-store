@@ -1,3 +1,5 @@
+## Version 2
+* [Version 2 of Todos-Goals App is available which uses create-react-app for more standardized folder structure](https://github.com/danqulogy/todos-goals-v2-using-create-react-app.git)
 ## Store
 Responsible for 
 * Getting the state
