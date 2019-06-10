@@ -87,6 +87,17 @@
         }
     }
 
+    function handleDeleteTodo(todo) {
+        return function (dispatch) {
+            dispatch(removeTodoAction(todo.id));
+            return API.deleteTodo(todo.id)
+                .catch(()=> {
+                    dispatch(addTodoAction(todo));
+                    alert('An error occured. Try again');
+                })
+        }
+    }
+
     // todos reducer function
     function todos(state = [], action) {
 
@@ -163,11 +174,20 @@
         return result;
     }
 
+    // custom thunk as middleware
+    const thunk = (store) => (next) => (action)=> {
+        if (typeof action === 'function'){
+            return action(store.dispatch)
+        }
+        return next(action);
+    }
+
     const store = Redux.createStore(Redux.combineReducers({
         todos,
         goals,
         loading
-    }), Redux.applyMiddleware(checker, logger));
+    }),
+        Redux.applyMiddleware(thunk, checker, logger));
 </script>
 
 <script type="text/babel">
@@ -205,12 +225,8 @@
         }
 
         removeItem = (todo)=> {
-            this.props.store.dispatch(removeTodoAction(todo.id));
-            return API.deleteTodo(todo.id)
-                .catch(()=> {
-                    this.props.store.dispatch(addTodoAction(todo));
-                    alert('An error occured. Try again');
-                })
+            this.props.store.dispatch(handleDeleteTodo(todo));
+
 
         }
 
