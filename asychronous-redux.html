@@ -239,7 +239,11 @@
             }));
         }
         removeItem = (goal) => {
-            this.props.store.dispatch(removeGoalAction(goal.id))
+            this.props.store.dispatch(removeGoalAction(goal.id));
+            return API.deleteGoal(goal.id)
+                .catch(()=>{
+                    this.props.store.dispatch(addGoalAction(goal));
+                });
         }
         render(){
             return (

@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/asychronous-redux.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="207" column="57" selection-start-line="207" selection-start-column="57" selection-end-line="207" selection-end-column="57" />
+            <state relative-caret-position="252">
+              <caret line="245" column="19" selection-start-line="245" selection-start-column="19" selection-end-line="245" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -202,7 +202,7 @@
       <updated>1560026809127</updated>
       <workItem from="1560026812029" duration="21953000" />
       <workItem from="1560089487918" duration="8687000" />
-      <workItem from="1560133724591" duration="6567000" />
+      <workItem from="1560133724591" duration="6845000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -215,7 +215,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44740000" />
+    <option name="totallyTimeSpent" value="45018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -238,7 +238,7 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.39900663" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.30463576" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.30463576" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -368,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/asychronous-redux.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="207" column="57" selection-start-line="207" selection-start-column="57" selection-end-line="207" selection-end-column="57" />
+        <state relative-caret-position="252">
+          <caret line="245" column="19" selection-start-line="245" selection-start-column="19" selection-end-line="245" selection-end-column="19" />
         </state>
       </provider>
     </entry>
