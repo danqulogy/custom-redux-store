@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e12373-073b-4811-b9e3-f3e3d43a0d96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/goals-todos-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asychronous-redux.html" beforeDir="false" afterPath="$PROJECT_DIR$/asychronous-redux.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,11 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/asychronous-redux.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="238" column="15" selection-start-line="238" selection-start-column="15" selection-end-line="238" selection-end-column="15" />
-              <folding>
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="254">
+              <caret line="251" column="38" lean-forward="true" selection-start-line="251" selection-start-column="38" selection-end-line="251" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -207,7 +202,7 @@
       <updated>1560026809127</updated>
       <workItem from="1560026812029" duration="21953000" />
       <workItem from="1560089487918" duration="8687000" />
-      <workItem from="1560133724591" duration="4238000" />
+      <workItem from="1560133724591" duration="4687000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -220,7 +215,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42411000" />
+    <option name="totallyTimeSpent" value="42860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -229,7 +224,7 @@
       <window_info id="Storybook" order="0" side_tool="true" weight="0.32980332" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -373,11 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/asychronous-redux.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="238" column="15" selection-start-line="238" selection-start-column="15" selection-end-line="238" selection-end-column="15" />
-          <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="254">
+          <caret line="251" column="38" lean-forward="true" selection-start-line="251" selection-start-column="38" selection-end-line="251" selection-end-column="38" />
         </state>
       </provider>
     </entry>
