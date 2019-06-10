@@ -191,13 +191,14 @@
 
         addItem = (e) => {
             e.preventDefault();
-            const name = this.input.value;
-            this.input.value = '';
-            this.props.store.dispatch(addTodoAction({
-                name,
-                complete: false,
-                id: generateId()
-            }));
+            return API.saveTodo(this.input.value)
+                .then((todo)=>{
+                    this.props.store.dispatch(addTodoAction(todo));
+                    this.input.value = '';
+                })
+                .catch(()=>{
+                    alert('Could not save todo. Try again');
+                });
         }
 
         removeItem = (todo)=> {
@@ -235,11 +236,14 @@
     class Goals extends React.Component{
         addGoal = (e) => {
             e.preventDefault();
-            const name = this.goalInput.value;
-            this.props.store.dispatch(addGoalAction({
-                name,
-                id: generateId()
-            }));
+            return API.saveGoal(this.goalInput.value)
+                .then((todo)=>{
+                    this.props.store.dispatch(addTodoAction(todo));
+                    this.goalInput.value = '';
+                })
+                .catch(()=>{
+                    alert('Could not save goal. Try again');
+                });
         }
         removeItem = (goal) => {
             this.props.store.dispatch(removeGoalAction(goal.id));
