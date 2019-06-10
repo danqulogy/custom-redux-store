@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/asychronous-redux.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="272" column="30" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
+            <state relative-caret-position="436">
+              <caret line="207" column="57" selection-start-line="207" selection-start-column="57" selection-end-line="207" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -202,7 +202,7 @@
       <updated>1560026809127</updated>
       <workItem from="1560026812029" duration="21953000" />
       <workItem from="1560089487918" duration="8687000" />
-      <workItem from="1560133724591" duration="5394000" />
+      <workItem from="1560133724591" duration="6567000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -215,7 +215,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43567000" />
+    <option name="totallyTimeSpent" value="44740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -368,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/asychronous-redux.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="272" column="30" selection-start-line="272" selection-start-column="30" selection-end-line="272" selection-end-column="30" />
+        <state relative-caret-position="436">
+          <caret line="207" column="57" selection-start-line="207" selection-start-column="57" selection-end-line="207" selection-end-column="57" />
         </state>
       </provider>
     </entry>
