@@ -8,12 +8,14 @@
 <!--    <script src="https://unpkg.com/react-dom@16.3.0-alpha.1/umd/react-dom.development.js"></script>-->
 <!--    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>-->
     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"></script>-->
+<!--    <script src="https://tylermcginnis.com/goals-todos-api/index.js"></script>-->
 
     <script src="babel.min.js"></script>
     <script src="react.development.js"></script>
     <script src="react-dom.development.js"></script>
     <script src="redux.min.js"></script>
-    <script src="https://tylermcginnis.com/goals-todos-api/index.js"></script>
+    <script src="goals-todos-api.js"></script>
+
 
 
 </head>
@@ -227,6 +229,15 @@
 
         componentDidMount(){
             const {store} = this.props;
+
+            Promise.all([
+                API.fetchTodos(),
+                API.fetchGoals()
+            ]).then(([todos, goals]) => {
+                console.log(todos);
+                console.log(goals);
+            });
+
             store.subscribe(()=> this.forceUpdate());
             // this.forceUpdate() is an anti-pattern but that is exactly what we need here
         }
