@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e12373-073b-4811-b9e3-f3e3d43a0d96" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/5-react-redux-context-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/5-react-redux-context-api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6-redux-react-library-usage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-redux.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5-react-redux-context-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/5-react-redux-context-api-custom-implementation.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,29 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5-react-redux-context-api.html">
+        <entry file="file://$PROJECT_DIR$/6-redux-react-library-usage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="360" column="5" lean-forward="true" selection-start-line="360" selection-start-column="5" selection-end-line="360" selection-end-column="5" />
-              <folding>
-                <element signature="e#1473#1552#0" />
-                <element signature="e#1588#1668#0" />
-                <element signature="e#1704#1784#0" />
-                <element signature="e#1819#1898#0" />
-                <element signature="e#1934#2014#0" />
-                <element signature="e#2062#2165#0" />
-                <element signature="e#2203#2507#0" />
-                <element signature="e#2578#3133#0" />
-                <element signature="e#3204#3585#0" />
-                <element signature="e#3653#3813#0" />
-                <element signature="e#3902#4282#0" />
-                <element signature="e#4361#4596#0" />
-                <element signature="e#4891#4944#0" />
-                <element signature="e#7225#8442#0" />
-                <element signature="e#8837#9517#0" />
-                <element signature="e#9111#9707#0" />
-                <element signature="e#9188#9513#0" />
-              </folding>
+            <state relative-caret-position="326">
+              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -96,6 +80,8 @@
         <option value="$PROJECT_DIR$/redux-thunk.min.js" />
         <option value="$PROJECT_DIR$/asychronous-redux.html" />
         <option value="$PROJECT_DIR$/5-react-redux-context-api.html" />
+        <option value="$PROJECT_DIR$/react-redux.min.js" />
+        <option value="$PROJECT_DIR$/6-redux-react-library-usage.html" />
       </list>
     </option>
   </component>
@@ -181,7 +167,7 @@
       <workItem from="1560026812029" duration="21953000" />
       <workItem from="1560089487918" duration="8687000" />
       <workItem from="1560133724591" duration="10528000" />
-      <workItem from="1560170245088" duration="8718000" />
+      <workItem from="1560170245088" duration="10415000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -194,7 +180,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57419000" />
+    <option name="totallyTimeSpent" value="59116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -203,8 +189,8 @@
       <window_info id="Storybook" order="0" side_tool="true" weight="0.32980332" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.26096824" />
-      <window_info id="Structure" order="4" side_tool="true" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49925926" visible="true" weight="0.20272315" />
+      <window_info id="Structure" order="4" sideWeight="0.50074077" side_tool="true" weight="0.2549168" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Tail" order="2" />
@@ -366,10 +352,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5-react-redux-context-api.html">
+    <entry file="file://$PROJECT_DIR$/5-react-redux-context-api-custom-implementation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="360" column="5" lean-forward="true" selection-start-line="360" selection-start-column="5" selection-end-line="360" selection-end-column="5" />
+        <state relative-caret-position="159">
+          <caret line="357" lean-forward="true" selection-start-line="357" selection-end-line="357" />
           <folding>
             <element signature="e#1473#1552#0" />
             <element signature="e#1588#1668#0" />
@@ -389,6 +375,20 @@
             <element signature="e#9111#9707#0" />
             <element signature="e#9188#9513#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-redux.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12742" lean-forward="true" selection-start-column="12742" selection-end-column="12742" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6-redux-react-library-usage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
         </state>
       </provider>
     </entry>
