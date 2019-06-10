@@ -10,7 +10,7 @@
     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"></script>-->
     <!--    <script src="https://tylermcginnis.com/goals-todos-api/index.js"></script>-->
     <!--    <script src="https://unpkg.com/redux-thunk@2.2.0/dist/redux-thunk.min.js"></script>-->
-<!--    <script src="https://unpkg.com/react-redux@5.0.6/dist/react-redux.min.js"></script>-->
+    <!--    <script src="https://unpkg.com/react-redux@5.0.6/dist/react-redux.min.js"></script>-->
 
 
     <script src="babel.min.js"></script>
@@ -83,7 +83,7 @@
         }
     }
 
-    function handleAddTodo (name, cb) {
+    function handleAddTodo(name, cb) {
         return (dispatch) => {
             return API.saveTodo(name)
                 .then((todo) => {
@@ -108,7 +108,7 @@
         }
     }
 
-    function handleToggle (id) {
+    function handleToggle(id) {
         return (dispatch) => {
             dispatch(toggleTodoAction(id))
             return API.saveTodoToggle(id)
@@ -118,7 +118,8 @@
                 })
         }
     }
-    function handleAddGoal (name, cb) {
+
+    function handleAddGoal(name, cb) {
         return (dispatch) => {
             return API.saveGoal(name)
                 .then((goal) => {
@@ -128,7 +129,8 @@
                 .catch(() => alert('There was an error. Try again.'))
         }
     }
-    function handleDeleteGoal (goal) {
+
+    function handleDeleteGoal(goal) {
         return (dispatch) => {
             dispatch(removeGoalAction(goal.id))
             return API.deleteGoal(goal.id)
@@ -138,12 +140,13 @@
                 })
         }
     }
-    function handleInitialData () {
+
+    function handleInitialData() {
         return (dispatch) => {
             return Promise.all([
                 API.fetchTodos(),
                 API.fetchGoals()
-            ]).then(([ todos, goals ]) => {
+            ]).then(([todos, goals]) => {
                 dispatch(receiveDataAction(todos, goals))
             })
         }
@@ -258,28 +261,17 @@
 
         addItem = (e) => {
             e.preventDefault();
-            return API.saveTodo(this.input.value)
-                .then((todo) => {
-                    this.props.dispatch(addTodoAction(todo));
-                    this.input.value = '';
-                })
-                .catch(() => {
-                    alert('Could not save todo. Try again');
-                });
+            this.props.dispatch(handleAddTodo(
+                this.input.value,
+                () => this.input.value = ''))
         };
 
         removeItem = (todo) => {
             this.props.dispatch(handleDeleteTodo(todo));
-
-
         };
 
         toggleItem = (id) => {
-            this.props.dispatch(toggleTodoAction(id));
-            return API.saveTodoToggle(id).catch(() => {
-                this.props.dispatch(toggleTodoAction(id));
-                alert('An error occured. Try again');
-            });
+            this.props.dispatch(handleToggle(id))
         };
 
         render() {
@@ -305,22 +297,13 @@
     class Goals extends React.Component {
         addGoal = (e) => {
             e.preventDefault();
-            return API.saveGoal(this.goalInput.value)
-                .then((todo) => {
-                    this.props.dispatch(addTodoAction(todo));
-                    this.goalInput.value = '';
-                })
-                .catch(() => {
-                    alert('Could not save goal. Try again');
-                });
+            this.props.dispatch(handleAddGoal(
+                this.goalInput.value,
+                () => this.goalInput.value = ''
+            ))
         };
         removeItem = (goal) => {
-            this.props.dispatch(removeGoalAction(goal.id));
-            return API.deleteGoal(goal.id)
-                .catch(() => {
-                    this.props.dispatch(addGoalAction(goal));
-                    alert('An error occured. Try again');
-                });
+            this.props.dispatch(handleDeleteGoal(goal))
         };
 
         render() {
@@ -338,7 +321,7 @@
     }
 
 
-    const ConnectedGoals = ReactRedux.connect((state)=> ({
+    const ConnectedGoals = ReactRedux.connect((state) => ({
         goals: state.goals
     }))(Goals);
 
@@ -346,16 +329,7 @@
 
         componentDidMount() {
             const {dispatch} = this.props;
-
-            Promise.all([
-                API.fetchTodos(),
-                API.fetchGoals()
-            ]).then(([todos, goals]) => {
-                dispatch(receiveDataAction(todos, goals));
-            });
-
-            //TODO: dispatch(handleInitialData())
-
+            dispatch(handleInitialData());
         }
 
         render() {
