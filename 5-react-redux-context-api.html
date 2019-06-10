@@ -321,6 +321,44 @@
 
     const Context = React.createContext();
 
+    function connect(mapStateToProps) {
+        return function (Component) {
+            class ReceiverComponent extends React.Component{
+
+                componentDidMount(){
+                    const {subscribe} =  this.props.store;
+                    this.unsubscribe = subscribe(()=> {
+                        this.forceUpdate();
+                    })
+                }
+
+                componentWillUnmount(){
+                    this.unsubscribe();
+                }
+                render() {
+                    return (
+                        <div>
+
+                        </div>
+                    );
+                }
+
+            }
+
+            class ConnectedComponent extends React.Component{
+
+                render() {
+                    return (
+                        <Context.Consumer>
+                            {(store) => <ReceiverComponent store={store}/>}
+                        </Context.Consumer>
+                    );
+                }
+
+            }
+        }
+    }
+
     // Custom Context.Provider abstraction
     class Provider extends React.Component{
 
