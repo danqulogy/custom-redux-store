@@ -336,11 +336,10 @@
                     this.unsubscribe();
                 }
                 render() {
-                    return (
-                        <div>
-
-                        </div>
-                    );
+                    const {dispatch, getState} =  this.props.store;
+                    const state = getState();
+                    const stateNeeded = mapStateToProps(state);
+                    return <Component {...stateNeeded} dispatch={dispatch}/>
                 }
 
             }
@@ -356,6 +355,8 @@
                 }
 
             }
+
+            return ConnectedComponent;
         }
     }
 

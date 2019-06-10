@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e12373-073b-4811-b9e3-f3e3d43a0d96" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/5-react-redux-context-api.html" beforeDir="false" afterPath="$PROJECT_DIR$/5-react-redux-context-api.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5-react-redux-context-api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="335" column="39" selection-start-line="335" selection-start-column="39" selection-end-line="335" selection-end-column="39" />
+            <state relative-caret-position="237">
+              <caret line="360" column="5" lean-forward="true" selection-start-line="360" selection-start-column="5" selection-end-line="360" selection-end-column="5" />
               <folding>
                 <element signature="e#1473#1552#0" />
                 <element signature="e#1588#1668#0" />
@@ -34,6 +33,8 @@
                 <element signature="e#4891#4944#0" />
                 <element signature="e#7225#8442#0" />
                 <element signature="e#8837#9517#0" />
+                <element signature="e#9111#9707#0" />
+                <element signature="e#9188#9513#0" />
               </folding>
             </state>
           </provider>
@@ -180,7 +181,7 @@
       <workItem from="1560026812029" duration="21953000" />
       <workItem from="1560089487918" duration="8687000" />
       <workItem from="1560133724591" duration="10528000" />
-      <workItem from="1560170245088" duration="8220000" />
+      <workItem from="1560170245088" duration="8718000" />
     </task>
     <task id="LOCAL-00001" summary="added redux from cdn link">
       <created>1560078015821</created>
@@ -193,7 +194,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56921000" />
+    <option name="totallyTimeSpent" value="57419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -216,7 +217,7 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.39900663" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.30463576" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.30463576" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -367,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5-react-redux-context-api.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="335" column="39" selection-start-line="335" selection-start-column="39" selection-end-line="335" selection-end-column="39" />
+        <state relative-caret-position="237">
+          <caret line="360" column="5" lean-forward="true" selection-start-line="360" selection-start-column="5" selection-end-line="360" selection-end-column="5" />
           <folding>
             <element signature="e#1473#1552#0" />
             <element signature="e#1588#1668#0" />
@@ -385,6 +386,8 @@
             <element signature="e#4891#4944#0" />
             <element signature="e#7225#8442#0" />
             <element signature="e#8837#9517#0" />
+            <element signature="e#9111#9707#0" />
+            <element signature="e#9188#9513#0" />
           </folding>
         </state>
       </provider>
